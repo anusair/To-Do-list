@@ -1,0 +1,118 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" , sans-serif;
+}
+
+:root {
+    --main-color: #03AED2;
+    --alt-color: #68D2E8;
+}
+
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right , var(--main-color) , var(--alt-color));
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 40px;
+    border-radius: 6px;
+}
+
+.title {
+    font-size: 32px;
+    margin-bottom: 20px; 
+    color: var(--main-color);
+    padding: 10px 15px;
+    border-radius: 6px;   
+    text-align: center;
+}
+
+.main-tasks {
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.main-tasks .task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.main-tasks .task p {
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.main-tasks .task .task-state i {
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.check {
+    color: #0f0;
+    margin-right: 20px;
+}
+
+.trash {
+    color: #f00;
+}
+
+.sign-task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 20px;
+    border-radius: 6px;
+    transition: all 0.3 ease;
+    margin-bottom: 50px;
+}
+
+.sign-task input {
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    border: 1px solid var(--main-color);
+    border-radius: 6px;
+    margin-right: 3px;
+    caret-color: var(--main-color);
+}
+
+.sign-task input::placeholder {
+    transition: all 0.3s ease;
+    opacity: 1;
+}
+
+.sign-task input:focus::placeholder {
+    opacity: 0;
+}
+
+.sign-task button {
+    border: none;
+    padding: 10px 15px;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--main-color);
+    border-radius: 6px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sign-task button:hover {
+    background-color: var(--alt-color);
+}
+
+.done {
+    opacity: 0.5;
+    text-decoration: line-through;
+}
